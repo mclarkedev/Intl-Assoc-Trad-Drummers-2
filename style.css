@@ -3,7 +3,7 @@ body {
     height: 100%;
     font-size: 1.5rem;
     font-family: 'Raleway', sans-serif;
-    line-height: 1.5em;
+    line-height: 2rem;
     color: #1e1e1e;
     overflow-x: hidden;
     display: block;
@@ -30,7 +30,7 @@ h3 {
 
 .navbar {
     z-index: 1000;
-    font-size: 20px;
+    font-size: 3rem;
     background-color: #1e1e1e;
     top: 0;
     left: 0;
