@@ -1,0 +1,24 @@
+.publication__grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .publication-item {
+        max-width: 250px;
+        padding: 1rem;
+        
+        img {
+            opacity: 1;
+
+            &:hover {
+                opacity: .75;
+                transition: opacity 0.3s ease-in-out;
+            }
+        }
+
+        .publication-info {
+            text-align: center;
+        }
+    }
+
+}
