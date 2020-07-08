@@ -10,6 +10,10 @@ const downloads = [
     {
         title: 'IATD Membership Checklist',
         path: '/pdf/iatd_checklist.pdf'
+    },
+    {
+        title: 'Norm Peth - John Sterling Pratt Prestige Award Certificate',
+        path: '/pdf/20200113_normpeth_jsppaward.pdf'
     }
 ]
 

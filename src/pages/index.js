@@ -4,11 +4,33 @@ import Seo from "../components/Seo";
 import Layout from "../components/structure/Layout";
 import Container from "../components/structure/Container";
 import JohnPrattImg from "../images/john_pratt_salute.jpg";
+import NormPethAward from "../images/normpeth_jsppaward.jpg"
 import "../styles/styles.scss"
 
 const IndexPage = () => (
   <Layout>
       <Seo title="Home" />
+      <article>
+        <Container>
+          <section>
+            <h1>The International Assoctiation of Traditional Drummers</h1>
+            <p>or I.A.T.D, founded by John S. Pratt (US Army Ret.), promotes the heritage of the "Traditional" rudimental drumming shared by rudimental drummers around the world.</p>
+            <p>Our goal is to unite rudimental drummers from throughout the world to celebrate, study, and pass on the "Traditional" Heritage of rudimental drumming, as well as to educate and preserve the heritage of each country's "Traditional" rudimental drumming history.</p>
+            <p>Our association has been endorsed by the following:</p>
+            <ul>
+              <li>The Company of Fifers & Drummers - Ivoryton, Connecticut USA</li>
+              <li>The Canadian Associates Drumming Rudimental Excellence (C.A.D.R.E)</li>
+              <li>The Drummers of North American Pipe Bands Associations</li>
+              <li>The Drummers of "Top Secret" and the "Grey Coats" of Basel, Switzerland</li>
+              <li>The Drummers of the Royal Scottish Pipe Band Association - Glasgow, Scotland</li>
+              <li>The former American Patriots Rudimental Drummers Club - Morgantown, Pennsylvania USA</li>
+            </ul>
+            <Link to="/history" className="button" title="To History page">
+              Learn more
+            </Link>
+          </section>
+        </Container>
+      </article>
       <article className="callout">
         <Container>
           <div className="callout__header">
@@ -32,26 +54,27 @@ const IndexPage = () => (
         </Container>
       </article>
       <article>
-        <Container>
-          <section>
-            <h1>The International Assoctiation of Traditional Drummers</h1>
-            <p>or I.A.T.D, founded by John S. Pratt (US Army Ret.), promotes the heritage of the "Traditional" rudimental drumming shared by rudimental drummers around the world.</p>
-            <p>Our goal is to unite rudimental drummers from throughout the world to celebrate, study, and pass on the "Traditional" Heritage of rudimental drumming, as well as to educate and preserve the heritage of each country's "Traditional" rudimental drumming history.</p>
-            <p>Our association has been endorsed by the following:</p>
-            <ul>
-              <li>The Company of Fifers & Drummers - Ivoryton, Connecticut USA</li>
-              <li>The Canadian Associates Drumming Rudimental Excellence (C.A.D.R.E)</li>
-              <li>The Drummers of North American Pipe Bands Associations</li>
-              <li>The Drummers of "Top Secret" and the "Grey Coats" of Basel, Switzerland</li>
-              <li>The Drummers of the Royal Scottish Pipe Band Association - Glasgow, Scotland</li>
-              <li>The former American Patriots Rudimental Drummers Club - Morgantown, Pennsylvania USA</li>
-            </ul>
-            <Link to="/history" className="button" title="To History page">
-              Learn more
-            </Link>
-          </section>
-        </Container>
-      </article>
+      <Container>
+        <section className="two-col-section ">
+          <div>
+              <img src={NormPethAward} alt="" />
+          </div>
+          <div>
+            <p>
+              Announcing the first esteemed recipient of the John Sterling Pratt Prestige Award, which was bestown upon IATD certified Master Drummer, Norm Peth, on January 13, 2020.
+            </p>
+            <p>
+              Norm has made significant contributions to the Drum World mentoring and teaching innumerous students gratis! Norm is a quality human being with incredible character who proudly served our Nation!
+            </p>
+            <p>
+              We Salute Norm at the age of 95 for his amazing life's work!
+            </p>
+            <p>View the certificate <a href="pdf/20200113_normpeth_jsppaward.pdf" target="_blank" rel="noreferrer">here</a>.</p>
+          </div>
+        </section>
+      </Container>
+    </article>
+
   </Layout>
 
 )
